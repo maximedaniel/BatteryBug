@@ -1,6 +1,15 @@
 # BatteryBug
 
-Tracker for Laptop Battery Events using the Battery Management System API on Windows 7
+Tracker for laptop battery events using the Battery Management System (BMS) API on Windows 7
+
+
+## Dependency
+
+1. Install *Python 3.6*
+2. Press `Win + R keys`
+3. Enter `cmd`
+4. Enter `cd <pathToBatteryBugDirectory>`
+5. Enter `pip install -r requirements.txt`
 
 ## Configuration
 
@@ -21,5 +30,5 @@ Tracker for Laptop Battery Events using the Battery Management System API on Win
 
 ## Installation
 
-1. Copy and Paste `<pathToBatteryBugDirectory>/dist/BatteryBug.exe` into `C:/Program Files (x86)/BatteryBug/`
+1. Copy and paste `<pathToBatteryBugDirectory>/dist/BatteryBug.exe` into `C:/Program Files (x86)/BatteryBug/`
 2. Create a shortcut for `C:/Program Files (x86)/BatteryBug/BatteryBug.exe` and cut it to `C:/Users/<username>/AppData/Roaming/Microsoft/Windows/Start Menu/Programs\Startup`
