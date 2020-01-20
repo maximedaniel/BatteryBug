@@ -1,13 +1,13 @@
 # batteryBug
-Progam tracking BMS events.
+Progam tracking Laptop Battery Events using the Battery Management System API on Windows 7
 
 ## Configuration
 Set the following variables of **BatteryBug.py**:
-- `SSID='IoTRaspberryPi3'`: SSID of the room (proximity level 2)
-- `DOMAIN = 'estia.local'`: DNS of the building (proximity level 1)
-- `URL = 'http://itame.pythonanywhere.com/CairnFORM/post/'`: URL for posting information
-- `DELAY = 60`:  request every 1 minute
-- `DEBUG = False`: debugging mode
+- `SSID='IoTRaspberryPi3'`: SSID of the room
+- `DOMAIN = 'estia.local'`: DNS of the building
+- `URL = 'http://itame.pythonanywhere.com/CairnFORM/post/'`: URL for post requests
+- `DELAY = 60`:  delay between requests
+- `DEBUG = False`: debug mode flag
 
 ## Compilation
 - pip install pyinstaller
