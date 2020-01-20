@@ -1,10 +1,10 @@
 # BatteryBug
 
-Progam tracking Laptop Battery Events using the Battery Management System API on Windows 7
+Tracker for Laptop Battery Events using the Battery Management System API on Windows 7
 
 ## Configuration
 
-1. Open **BatteryBug.py**
+1. Open *BatteryBug.py*
 2. Set the following variables:
     - `SSID='IoTRaspberryPi3'`: SSID of the room
     - `DOMAIN = 'estia.local'`: DNS of the building
@@ -21,5 +21,5 @@ Progam tracking Laptop Battery Events using the Battery Management System API on
 
 ## Installation
 
-1. Copy and Paste `dist/BatteryBug.exe` into `C:/Program Files (x86)/BatteryBug/`
-2. Create a Shortcut of `C:/Program Files (x86)/BatteryBug/BatteryBug.exe` and add it to `C:/Users/<username>/AppData/Roaming/Microsoft/Windows/Start Menu/Programs\Startup`
+1. Copy and Paste `<pathToBatteryBugDirectory>/dist/BatteryBug.exe` into `C:/Program Files (x86)/BatteryBug/`
+2. Create a shortcut for `C:/Program Files (x86)/BatteryBug/BatteryBug.exe` and cut it to `C:/Users/<username>/AppData/Roaming/Microsoft/Windows/Start Menu/Programs\Startup`
