@@ -12,11 +12,8 @@ Progam tracking Laptop Battery Events using the Battery Management System API on
 
 ## Compilation
 1. Open a Windows Command Prompt
-2. Execute the following commands:
-    - `pip install pyinstaller`
-    - `pyinstaller BatteryBug.spec`
+2. Execute the command `pip install pyinstaller && pyinstaller BatteryBug.spec`
 
 ## Installation
-1. Perform the following instructions:
-    - Copy and Paste `dist/BatteryBug.exe` into `C:/Program Files (x86)/BatteryBug/`
-    - Create a Shortcut of `C:\Program Files (x86)\BatteryBug\BatteryBug.exe` and add it to `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+1. Copy and Paste `dist/BatteryBug.exe` into `C:/Program Files (x86)/BatteryBug/`
+2. Create a Shortcut of `C:\Program Files (x86)\BatteryBug\BatteryBug.exe` and add it to `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
