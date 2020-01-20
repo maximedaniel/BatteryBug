@@ -10,9 +10,9 @@ Set the following variables of **BatteryBug.py**:
 - `DEBUG = False`: debug mode flag
 
 ## Compilation
-- pip install pyinstaller
-- pyinstaller BatteryBug.spec
+- `pip install pyinstaller`
+- `pyinstaller BatteryBug.spec`
 
 ## Installation
-- Copy and Paste **dist/BatteryBug.exe** into **C:\Program Files (x86)\BatteryBug\**
+- Copy and Paste **dist/BatteryBug.exe** into **C:/Program Files (x86)/BatteryBug/**
 - Create a Shortcut of **C:\Program Files (x86)\BatteryBug\BatteryBug.exe** and add it to startup programs
