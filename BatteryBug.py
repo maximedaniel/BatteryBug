@@ -23,7 +23,7 @@ import sys
 SSID='IoTRaspberryPi3' # The SSID of the room <-> proximity level 2
 DOMAIN = 'estia.local' # The DNS of the building <-> proximity level 1
 URL = 'http://itame.pythonanywhere.com/CairnFORM/post/' # url to request for posting information
-DELAY = 60 # request every 1 minute
+DELAY = 60 * 5 # request every 5 minutes
 DEBUG = False # set DEBUG to false for building
 
 def subprocess_args(include_stdout=True):
