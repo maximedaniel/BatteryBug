@@ -2,7 +2,6 @@
 
 Tracker for laptop battery events using the Battery Management System (BMS) API on Windows 7
 
-
 ## Dependency
 
 1. Install *Python 3.6*
@@ -15,11 +14,11 @@ Tracker for laptop battery events using the Battery Management System (BMS) API 
 
 1. Open *BatteryBug.py*
 2. Set the following variables:
-    - `SSID='IoTRaspberryPi3'`: SSID of the room
-    - `DOMAIN = 'estia.local'`: DNS of the building
-    - `URL = 'http://itame.pythonanywhere.com/CairnFORM/post/'`: URL for post requests
-    - `DELAY = 60`:  delay between requests
-    - `DEBUG = False`: debug mode flag
+    - `SSID`: SSID of the room
+    - `DOMAIN`: DNS of the building
+    - `URL`: URL for post requests
+    - `DELAY`:  delay between requests
+    - `DEBUG`: debug flag
 
 ## Compilation
 
