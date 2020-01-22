@@ -129,6 +129,9 @@ def init():
 			'Username': [],
 			'Plugged': [],
 			'Near': [],
+			'BatteryLevel': [],
+			'DischargeLevel': [],
+			'ChargeLevel': [],
 			'Availability': [],
 			'BatteryRechargeTime': [],
 			'BatteryStatus': [],
@@ -187,6 +190,9 @@ def clear():
 				'Username': [],
 				'Plugged': [],
                 'Near': [],
+                'BatteryLevel': [],
+                'DischargeLevel': [],
+                'ChargeLevel': [],
                 'Availability': [],
                 'BatteryRechargeTime': [],
                 'BatteryStatus': [],
@@ -256,7 +262,8 @@ NO = 0
 YES = 1
 plugged = UNKNOW
 battery_level = UNKNOW
-recharge_level = UNKNOW
+discharge_level = UNKNOW
+charge_level = UNKNOW
 shifting = NO
 battery = None
 if len(c.Win32_Battery ()):
@@ -273,6 +280,13 @@ while True :
 		ans['Username'] =   getpass.getuser()
 		ans['Plugged'] =   isPlugged(battery)
 		ans['Near'] =   locateUser()
+		ans['BatteryLevel'] =  ans['EstimatedChargeRemaining']
+		battery_level = ans['BatteryLevel'] if battery_level == UNKNOW else battery_level
+		delta_battery_level = ans['BatteryLevel'] - battery_level
+		ans['DischargeLevel'] = delta_battery_level if delta_battery_level < 0 else 0
+		ans['ChargeLevel'] = delta_battery_level if delta_battery_level > 0 else 0
+		battery_level = ans['BatteryLevel']
+		print('package:', ans) if DEBUG else 0
 		try :
 			status = post(ans)
 			if status !=200 :
